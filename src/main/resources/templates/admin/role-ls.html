@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator="/admin/admin-layout">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+        
+        <div class="content">
+          <ul class="breadcrumb">
+            <li>
+              <p>YOU ARE HERE</p>
+            </li>
+            <li><a href="#" class="active" th:text="#{rolelist}"></a>
+            </li>
+          </ul>
+          <div class="page-title"> <i class="icon-custom-left"></i>
+            <h3>Role List - <span class="semi-bold">Tables</span></h3>
+          </div>
+          
+          
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="grid simple ">
+                    <div class="grid-title no-border">
+                      <h4 th:text="#{rolelist}"></h4>
+                      <div class="tools">
+                        <a href="javascript:;" class="collapse"></a>
+                        <a href="#grid-config" data-toggle="modal" class="config"></a>
+                        <a href="javascript:;" class="reload"></a>
+                        <a href="javascript:;" class="remove"></a>
+                      </div>
+                    </div>
+                    <div class="grid-body no-border">
+                      <h3>Role List  <span class="semi-bold">Table</span></h3>
+                      <p>They (allegedly) aid usability in reading tabular data by offering the user a coloured means of separating and differentiating rows from one another. Simply add the class<code>.table-striped</code>
+                      </p>
+                      <br>
+                      <br>
+                      <table class="table table-hover no-more-tables">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th th:text="#{firstname}"></th>
+                            <th th:text="#{lastname}"></th>
+                            <th th:text="#{role}"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Chheng </td>
+                            <td>Chansopheaktra</td>
+                            <td>Admin</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>No</td>
+                            <td>Care</td>
+                            <td>User</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>User</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            
+          </div>
+        <!-- END PAGE -->
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+	<title layout:title-pattern="$CONTENT_TITLE - $DECORATOR_TITLE">Webarch - Responsive Admin Dashboard</title>
+
+	<style th:replace="@{/shared/admin/_style}"></style>
+
+</head>
+<body class="skin-blue sidebar-mini wysihtml5-supported">
+
+	<div th:replace="@{/shared/admin/_header}"></div>
+
+	<div th:replace="@{/shared/admin/_left-side-bar}"></div>
+
+	<div layout:fragment="content" class="page-content">
+	
+	</div>
+
+	<div th:replace="@{/shared/admin/_right-side-bar}"></div>
+
+	<div th:replace="@{/shared/admin/_script}"></div>
+
+</body>
+</html>

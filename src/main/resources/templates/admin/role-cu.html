@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator="/admin/admin-layout">
+<head>
+<meta charset="UTF-8">
+<title ></title>
+</head>
+<body>
+
+<div layout:fragment="content">
+	<div class="content">
+	
+	<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+          <ul class="breadcrumb">
+            <li>
+              <p>YOU ARE HERE</p>
+            </li>
+            <li><a href="#" class="active" th:text="#{rolecu}"></a>
+            </li>
+          </ul>
+          <div class="page-title"> <i class="icon-custom-left"></i>
+            <h3>Role CU - <span class="semi-bold">Tables</span></h3>
+          </div>
+		
+		<div class="row">
+            <div class="col-md-12">
+              <div class="grid simple">
+                <div class="grid-title no-border">
+                  <h4 th:text="#{rolecu}"></h4>
+                  <div class="tools">
+                    <a href="javascript:;" class="collapse"></a>
+                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                    <a href="javascript:;" class="reload"></a>
+                    <a href="javascript:;" class="remove"></a>
+                  </div>
+                </div>
+                <div class="grid-body no-border">
+                  <br>
+                  <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                      <div class="form-group">
+                        <label class="form-label" th:text="#{username}"></label>
+                        <span class="help">e.g. "chhengchansopheaktra"</span>
+                        <div class="controls">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" th:text="#{role}"></label>
+                        <span class="help">e.g. "Admin or User"</span>
+                        <div class="controls">
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" th:text="#{password}"></label>
+                        <span class="help">e.g. "asdfas;ldkfj"</span>
+                        <div class="controls">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-actions">
+                      <div class="pull-left">
+                        <div class="checkbox checkbox check-success 	">
+                          <input id="chkTerms" type="checkbox" value="1">
+                          <label for="chkTerms">I Here by agree on the Term and condition. </label>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <button class="btn btn-danger btn-cons" type="submit" th:text="#{save}"><i class="icon-ok"></i></button>
+                        <button class="btn btn-white btn-cons" type="button" th:text="#{cancel}"></button>
+                      </div>
+                    </div>
+	</div>
+</div>
+
+</body>
+</html>

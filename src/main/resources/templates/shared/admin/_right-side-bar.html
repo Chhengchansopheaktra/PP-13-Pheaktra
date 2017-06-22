@@ -1,0 +1,236 @@
+<!--RIGHT-SIDE-BAR-->
+    <div class="chat-window-wrapper">
+        <div id="main-chat-wrapper" class="inner-content">
+          <div class="scroll-wrapper chat-window-wrapper scroller scrollbar-dynamic" style="position: relative;"><div class="chat-window-wrapper scroller scrollbar-dynamic scroll-content" id="chat-users" style="margin-bottom: 0px; margin-right: 0px; height: 703px;">
+            <div class="chat-header">
+              <div class="pull-left">
+                <input type="text" placeholder="search">
+              </div>
+              <div class="pull-right">
+                <a href="#" class="">
+                  <div class="iconset top-settings-dark "></div>
+                </a>
+              </div>
+            </div>
+            <div class="side-widget">
+              <div class="side-widget-title">group chats</div>
+              <div class="side-widget-content">
+                <div id="groups-list">
+                  <ul class="groups">
+                    <li>
+                      <a href="#">
+                        <div class="status-icon green"></div>Office work</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="status-icon green"></div>Personal vibes</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="side-widget fadeIn">
+              <div class="side-widget-title">favourites</div>
+              <div id="favourites-list">
+                <div class="side-widget-content">
+                  <div class="user-details-wrapper active" data-chat-status="online" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="Jane Smith">
+                    <div class="user-profile">
+                      <img th:src="@{/resources/admin/assets/img/profiles/d.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/d2x.jpg}" width="35" height="35">
+                    </div>
+                    <div class="user-details">
+                      <div class="user-name">
+                        Jane Smith
+                      </div>
+                      <div class="user-more">
+                        Hello you there?
+                      </div>
+                    </div>
+                    <div class="user-details-status-wrapper">
+                      <span class="badge badge-important">3</span>
+                    </div>
+                    <div class="user-details-count-wrapper">
+                      <div class="status-icon green"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="user-details-wrapper" data-chat-status="busy" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="David Nester">
+                    <div class="user-profile">
+                      <img th:src="@{/resources/admin/assets/img/profiles/c.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/c.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/c2x.jpg}" width="35" height="35">
+                    </div>
+                    <div class="user-details">
+                      <div class="user-name">
+                        David Nester
+                      </div>
+                      <div class="user-more">
+                        Busy, Do not disturb
+                      </div>
+                    </div>
+                    <div class="user-details-status-wrapper">
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="user-details-count-wrapper">
+                      <div class="status-icon red"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side-widget">
+              <div class="side-widget-title">more friends</div>
+              <div class="side-widget-content" id="friends-list">
+                <div class="user-details-wrapper" data-chat-status="online" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="Jane Smith">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/d.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/d2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="user-name">
+                      Jane Smith
+                    </div>
+                    <div class="user-more">
+                      Hello you there?
+                    </div>
+                  </div>
+                  <div class="user-details-status-wrapper">
+                  </div>
+                  <div class="user-details-count-wrapper">
+                    <div class="status-icon green"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="user-details-wrapper" data-chat-status="busy" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="David Nester">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/h.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/h.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/h2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="user-name">
+                      David Nester
+                    </div>
+                    <div class="user-more">
+                      Busy, Do not disturb
+                    </div>
+                  </div>
+                  <div class="user-details-status-wrapper">
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="user-details-count-wrapper">
+                    <div class="status-icon red"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="user-details-wrapper" data-chat-status="online" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="Jane Smith">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/c.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/c.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/c2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="user-name">
+                      Jane Smith
+                    </div>
+                    <div class="user-more">
+                      Hello you there?
+                    </div>
+                  </div>
+                  <div class="user-details-status-wrapper">
+                  </div>
+                  <div class="user-details-count-wrapper">
+                    <div class="status-icon green"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="user-details-wrapper" data-chat-status="busy" th:data-chat-user-pic="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-chat-user-pic-retina="@{/resources/admin/assets/img/profiles/d2x.jpg}" data-user-name="David Nester">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/h.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/h.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/h2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="user-name">
+                      David Nester
+                    </div>
+                    <div class="user-more">
+                      Busy, Do not disturb
+                    </div>
+                  </div>
+                  <div class="user-details-status-wrapper">
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="user-details-count-wrapper">
+                    <div class="status-icon red"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="width: 96px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="height: 96px;"></div></div></div></div>
+          <div class="chat-window-wrapper" id="messages-wrapper" style="display:none">
+            <div class="chat-header">
+              <div class="pull-left">
+                <input type="text" placeholder="search">
+              </div>
+              <div class="pull-right">
+                <a href="#" class="">
+                  <div class="iconset top-settings-dark "></div>
+                </a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="chat-messages-header">
+              <div class="status online"></div><span class="semi-bold">Jane Smith(Typing..)</span>
+              <a href="#" class="chat-back"><i class="icon-custom-cross"></i></a>
+            </div>
+            <div class="scroll-wrapper chat-messages scrollbar-dynamic clearfix" style="position: relative;"><div class="chat-messages scrollbar-dynamic clearfix scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+              <div class="inner-scroll-content clearfix">
+                <div class="sent_time">Yesterday 11:25pm</div>
+                <div class="user-details-wrapper ">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/d.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/d2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="bubble">
+                      Hello, You there?
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="sent_time off">Yesterday 11:25pm</div>
+                </div>
+                <div class="user-details-wrapper ">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/d.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/d2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="bubble">
+                      How was the meeting?
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="sent_time off">Yesterday 11:25pm</div>
+                </div>
+                <div class="user-details-wrapper ">
+                  <div class="user-profile">
+                    <img th:src="@{/resources/admin/assets/img/profiles/d.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/d.jpg}" th:data-src-retina="@{/resource/admin/assets/img/profiles/d2x.jpg}" width="35" height="35">
+                  </div>
+                  <div class="user-details">
+                    <div class="bubble">
+                      Let me know when you free
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="sent_time off">Yesterday 11:25pm</div>
+                </div>
+                <div class="sent_time ">Today 11:25pm</div>
+                <div class="user-details-wrapper pull-right">
+                  <div class="user-details">
+                    <div class="bubble sender">
+                      Let me know when you free
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="sent_time off">Sent On Tue, 2:45pm</div>
+                </div>
+              </div>
+            </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div></div>
+            <div class="chat-input-wrapper" style="display:none">
+              <textarea id="chat-message-input" rows="1" placeholder="Type your message}"></textarea>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+    </div>

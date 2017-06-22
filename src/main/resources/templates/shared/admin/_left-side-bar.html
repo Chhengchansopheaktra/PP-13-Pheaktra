@@ -1,0 +1,78 @@
+<!--LEFT-SIDE-BAR-->
+    <div class="page-sidebar  visible" id="main-menu">
+        <!-- BEGIN MINI-PROFILE -->
+        <div class="scroll-wrapper page-sidebar-wrapper scrollbar-dynamic" style="position: relative;"><div class="page-sidebar-wrapper scrollbar-dynamic scroll-content scroll-scrolly_visible" id="main-menu-wrapper" style="margin-bottom: 0px; margin-right: 0px; height: 703px;">
+          <div class="user-info-wrapper sm">
+            <div class="profile-wrapper sm">
+              <img th:src="@{/resources/admin/assets/img/profiles/avatar.jpg}" alt="" th:data-src="@{/resources/admin/assets/img/profiles/avatar.jpg}" th:data-src-retina="@{assets/img/profiles/avatar2x.jpg}" width="69" height="69">
+              <div class="availability-bubble online"></div>
+            </div>
+            <div class="user-info sm">
+              <div class="username">Chan <span class="semi-bold">Sopheaktra</span></div>
+              <div class="status">Life goes on...</div>
+            </div>
+          </div>
+          <!-- END MINI-PROFILE -->
+          <!-- BEGIN SIDEBAR MENU -->
+          <p class="menu-title sm">BROWSE <span class="pull-right"><a href="javascript:;"><i class="material-icons">refresh</i></a></span></p>
+          <ul>
+	            <li><a th:href="@{dashboard}"><i class="material-icons">home</i> <span class="title" th:text="#{dashboard}"></span> <span class="selected"></span>  </a>
+	              
+	            </li>
+	            <li><a th:href="@{user-ls}"><i class="fa fa-table fa-fw"></i> <span class="title" th:text="#{userlist}"></span> <span class="selected"></span></a>
+	              
+	            </li>
+	            <li><a th:href="@{user-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{usercu}"></span> <span class="selected"></span></a>
+	              
+	            </li>
+	            <li><a th:href="@{role-ls}"><i class="material-icons">view_stream</i> <span class="title" th:text="#{rolelist}"></span> <span class="selected"></span></a>
+	              
+	            </li>
+	            <li><a th:href="@{role-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{rolecu}"></span> <span class="selected"></span></a>
+              
+            	</li>
+            </ul>
+            <p class="menu-title">PROJECTS </p>
+            <div class="status-widget">
+              <div class="status-widget-wrapper">
+                <div class="title">Freelancer<a href="#" class="remove-widget"><i class="material-icons">close</i></a></div>
+                <p>Redesign home page</p>
+              </div>
+            </div>
+            <div class="status-widget">
+              <div class="status-widget-wrapper">
+                <div class="title">envato<a href="#" class="remove-widget"><i class="material-icons">close</i></a></div>
+                <p>Statistical report</p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <!-- END SIDEBAR MENU -->
+	        </div>
+	        <div class="scroll-element scroll-x scroll-scrolly_visible">
+	        	<div class="scroll-element_outer">    
+	        		<div class="scroll-element_size"></div>    
+	        		<div class="scroll-element_track"></div>    
+	        		<div class="scroll-bar" style="width: 112px;"></div>
+	        	</div>
+	        </div>
+	        <div class="scroll-element scroll-y scroll-scrolly_visible">
+	        	<div class="scroll-element_outer">    
+	        		<div class="scroll-element_size"></div>    
+	        		<div class="scroll-element_track"></div>    
+	        		<div class="scroll-bar" style="height: 447px; top: 0px;"></div>
+	        	</div>
+	        </div>
+	    </div>
+    </div>
+    <a href="#" class="scrollup">Scroll</a>
+
+    <!--FOOTER-OF-RIGHT-SIDE-BAR-->
+    <div class="footer-widget">
+        <div class="progress transparent progress-small no-radius no-margin">
+          <div class="progress-bar progress-bar-success animate-progress-bar" data-percentage="79%" style="width: 79%;"></div>
+        </div>
+        <div class="pull-right">
+          <div class="details-status"> <span class="animate-number" data-value="86" data-animation-duration="560">86</span>% </div>
+          <a href="lockscreen.html"><i class="material-icons">power_settings_new</i></a></div>
+    </div>
