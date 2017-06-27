@@ -15,19 +15,15 @@
             <li>
               <p>YOU ARE HERE</p>
             </li>
-            <li><a href="#" class="active" th:text="#{userlist}"></a>
+            <li><a href="#" class="active" th:text="#{_ta_user_list}"></a>
             </li>
           </ul>
-          <div class="page-title"> <i class="icon-custom-left"></i>
-            <h3>User List - <span class="semi-bold">Tables</span></h3>
-          </div>
           
           
               <div class="row">
                 <div class="col-md-12">
                   <div class="grid simple ">
                     <div class="grid-title no-border">
-                      <h4 th:text="#{userlist}"></h4>
                       <div class="tools">
                         <a href="javascript:;" class="collapse"></a>
                         <a href="#grid-config" data-toggle="modal" class="config"></a>
@@ -36,37 +32,37 @@
                       </div>
                     </div>
                     <div class="grid-body no-border">
-                      <h3>User List  <span class="semi-bold">Table</span></h3>
-                      <p>They (allegedly) aid usability in reading tabular data by offering the user a coloured means of separating and differentiating rows from one another. Simply add the class<code>.table-striped</code>
-                      </p>
+                      <h3 th:text="#{_ta_user_list}"></h3>
                       <br>
                       <br>
                       <table class="table table-hover no-more-tables">
                         <thead>
                           <tr>
-                            <th>#</th>
-                            <th th:text="#{firstname}"></th>
-                            <th th:text="#{lastname}"></th>
-                            <th th:text="#{username}"></th>
+                            <th th:text="#{_ta_user_reg_id}">ID</th>
+                            <th th:text="#{_ta_user_reg_name}">User Name</th>
+                            <th th:text="#{_ta_user_reg_email}">Email</th>
+                            <th th:text="#{_ta_user_reg_gender}">Gender</th>
+                            <th th:text="#{_ta_user_reg_phone}">Phone Number</th>
+                            <th th:text="#{_ta_status}">Status</th>
+                            <th th:text="#{_ta_action}">Action</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Chheng </td>
-                            <td>Chansopheaktra</td>
-                            <td>@pheaktra</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>No</td>
-                            <td>Care</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                          <tr th:each="users : ${USERLIST}">
+                            <td th:text="${users.id}"></td>
+                            <td th:text="${users.username}"></td>
+                            <td th:text="${users.email}"></td>
+                            <th th:if="${users.gender}=='m'" th:text="#{male}"></th>
+                            <th th:if="${users.gender}=='f'" th:text="#{female}"></th>
+                            <th th:text="${users.phoneNumber}"></th>
+                            <th th:text="${users.status}"></th>
+                            
+                            <td th:text="${users.userHash}" style="display:none;"></td>
+                            <th>
+                            	<a th:href="'delete'+'/'+${users.userHash}" >Delete</a> |
+                            	<a th:href="'update'+'/'+${users.userHash}">Update</a> |
+                            	<a th:href="'detail'+'/'+${users.userHash}">Detail</a>
+                            </th>
                           </tr>
                         </tbody>
                       </table>

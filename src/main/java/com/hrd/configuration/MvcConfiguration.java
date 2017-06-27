@@ -28,12 +28,14 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 		registry.addViewController("/").setViewName("/home");
 	
 		// Back End
-		registry.addViewController("/admin/").setViewName("/admin/dashboard");
-		registry.addViewController("/admin/dashboard").setViewName("/admin/dashboard");
-		registry.addViewController("/admin/user-ls").setViewName("/admin/user-ls");
-		registry.addViewController("/admin/user-cu").setViewName("/admin/user-cu");
+//		registry.addViewController("/admin/").setViewName("/admin/dashboard");
+//		registry.addViewController("/admin/dashboard").setViewName("/admin/dashboard");
+//		registry.addViewController("/admin/user-ls").setViewName("/admin/user-ls");
+//		registry.addViewController("/admin/user-cu").setViewName("/admin/user-cu");
 		registry.addViewController("/admin/role-ls").setViewName("/admin/role-ls");
 		registry.addViewController("/admin/role-cu").setViewName("/admin/role-cu");
+//		registry.addViewController("/admin/user-profile").setViewName("/admin/user-profile");
+//		registry.addViewController("/admin/user-update").setViewName("/admin/user-update");
 	}
 
 	@Override

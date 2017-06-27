@@ -14,54 +14,24 @@
           </div>
           <!-- END MINI-PROFILE -->
           <!-- BEGIN SIDEBAR MENU -->
-          <p class="menu-title sm">BROWSE <span class="pull-right"><a href="javascript:;"><i class="material-icons">refresh</i></a></span></p>
+          <p class="menu-title sm">BROWSE <span class="pull-right"><a href="javascript:;"></a></span></p>
           <ul>
-	            <li><a th:href="@{dashboard}"><i class="material-icons">home</i> <span class="title" th:text="#{dashboard}"></span> <span class="selected"></span>  </a>
+	            <li><a th:href="@{/admin/dashboard}"><i class="material-icons">home</i> <span class="title" th:text="#{_ta_header_dashboard}"></span> <span class="selected"></span>  </a>
 	              
 	            </li>
-	            <li><a th:href="@{user-ls}"><i class="fa fa-table fa-fw"></i> <span class="title" th:text="#{userlist}"></span> <span class="selected"></span></a>
+	            <li><a th:href="@{/admin/user-ls}"><i class="fa fa-table fa-fw"></i> <span class="title" th:text="#{_ta_user_list}"></span> <span class="selected"></span></a>
 	              
 	            </li>
-	            <li><a th:href="@{user-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{usercu}"></span> <span class="selected"></span></a>
+	            <li><a th:href="@{/admin/user-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{_ta_header_user}"></span> <span class="selected"></span></a>
 	              
 	            </li>
-	            <li><a th:href="@{role-ls}"><i class="material-icons">view_stream</i> <span class="title" th:text="#{rolelist}"></span> <span class="selected"></span></a>
+	            <li><a th:href="@{/admin/role-ls}"><i class="material-icons">view_stream</i> <span class="title" th:text="#{_ta_role_list}"></span> <span class="selected"></span></a>
 	              
 	            </li>
-	            <li><a th:href="@{role-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{rolecu}"></span> <span class="selected"></span></a>
+	            <li><a th:href="@{/admin/role-cu}"><i class="fa fa-fw fa-edit"></i> <span class="title" th:text="#{_ta_header_role}"></span> <span class="selected"></span></a>
               
             	</li>
             </ul>
-            <p class="menu-title">PROJECTS </p>
-            <div class="status-widget">
-              <div class="status-widget-wrapper">
-                <div class="title">Freelancer<a href="#" class="remove-widget"><i class="material-icons">close</i></a></div>
-                <p>Redesign home page</p>
-              </div>
-            </div>
-            <div class="status-widget">
-              <div class="status-widget-wrapper">
-                <div class="title">envato<a href="#" class="remove-widget"><i class="material-icons">close</i></a></div>
-                <p>Statistical report</p>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-          <!-- END SIDEBAR MENU -->
-	        </div>
-	        <div class="scroll-element scroll-x scroll-scrolly_visible">
-	        	<div class="scroll-element_outer">    
-	        		<div class="scroll-element_size"></div>    
-	        		<div class="scroll-element_track"></div>    
-	        		<div class="scroll-bar" style="width: 112px;"></div>
-	        	</div>
-	        </div>
-	        <div class="scroll-element scroll-y scroll-scrolly_visible">
-	        	<div class="scroll-element_outer">    
-	        		<div class="scroll-element_size"></div>    
-	        		<div class="scroll-element_track"></div>    
-	        		<div class="scroll-bar" style="height: 447px; top: 0px;"></div>
-	        	</div>
 	        </div>
 	    </div>
     </div>

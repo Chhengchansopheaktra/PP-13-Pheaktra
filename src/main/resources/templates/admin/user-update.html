@@ -15,13 +15,13 @@
             <li>
               <p>YOU ARE HERE</p>
             </li>
-            <li><a href="#" class="active" th:text="#{_ta_header_user}"></a> </li>
+            <li><a href="#" class="active" th:text="#{_ta_user_update}"></a> </li>
           </ul>
         <div class="row" >
             <div class="col-md-12">
               <div class="grid simple form-grid">
                 <div class="grid-title no-border">
-                  <h4 th:text="#{_ta_header_user}"></h4>
+                  <h4 th:text="#{_ta_user_update}"></h4>
                   <div class="tools">
                     <a href="javascript:;" class="collapse"></a>
                     <a href="#grid-config" data-toggle="modal" class="config"></a>
@@ -30,35 +30,36 @@
                   </div>
                 </div>
                 <div class="grid-body no-border">
-                
-                  <form th:action="@{/admin/user-c}" th:object="${USERCU}" method="post" class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate">
+                  <form th:action="@{'/admin/user-updated/' + ${USERUPDATE.userHash}}" th:object="${USERUPDATE}" method="post" class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate">
                     <div class="row column-seperation">
                       <div class="col-md-6">
                         <h4 th:text="#{_ta_user_list_info}"></h4>
                         <div class="row form-row">
                           <div class="col-md-12">
-                            <input th:field="*{username}" name="form3FirstName" id="form3FirstName" type="text" class="form-control" th:placeholder="#{_ta_user_reg_name}">
+                          	<label th:text="#{_ta_user_reg_name}"></label>
+                            <input th:field="*{username}" name="form3FirstName" id="form3FirstName" type="text" class="form-control"  />
                           </div>
                         </div>
                         <div class="row form-row">
                           <div class="col-md-7">
-                            <select th:field="*{gender}" name="form3Gender" id="form3Gender" class="form-control">
-                            	
-								  <option value="m" th:text="#{_ta_male}"></option>
-                          		  <option value="f" th:text="#{_ta_female}"></option>
-								 
+                          	<label th:text="#{_ta_user_reg_gender}"></label>
+                            <select th:field="*{gender}" name="form3Gender" id="form3Gender" class="select2 form-control">
+                              <option value="m" th:text="#{male}"></option>
+                              <option value="f" th:text="#{female}"></option>
                             </select>
                           </div>
                         </div>
                         <div class="row form-row">
                           <div class="col-md-12">
-                            <input th:field="*{phoneNumber}" type="text" th:placeholder="#{_ta_user_reg_phone}" class="form-control" id="form3PhoneNumber" name="form3PhoneNumber">
+                          	<label th:text="#{_ta_user_reg_gender}"></label>
+                            <input th:field="*{phoneNumber}" type="text" class="form-control" id="form3PhoneNumber" name="form3PhoneNumber">
                           </div>
                         </div>
                         
                         <div class="row form-row">
                           <div class="col-md-12">
-                            <input th:field="*{email}" name="form3Email" id="form3Email" type="text" class="form-control" placeholder="email@address.com">
+                          	<label th:text="#{_ta_user_reg_email}">Email</label>
+                            <input th:field="*{email}" name="form3Email" id="form3Email" type="text" class="form-control" >
                           </div>
                         </div>
                       </div>
@@ -71,7 +72,7 @@
                         </div>
                       </div>
                       <div class="pull-right">
-                        <button class="btn btn-danger btn-cons" type="submit" th:text="#{_ta_button_save}"><i class="icon-ok"></i></button>
+                        <button class="btn btn-danger btn-cons" type="submit" th:text="#{_ta_button_update}"><i class="icon-ok"></i></button></a>
                         <button class="btn btn-white btn-cons" type="button" th:text="#{cancel}"></button>
                       </div>
                     </div>
